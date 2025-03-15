@@ -1,0 +1,204 @@
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: start;
+    gap: 30px;
+}
+.admin_name{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-light-blue);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid var(--color-light-blue);
+    max-width: 300px;
+    max-height: 100px;
+    overflow: hidden;
+}
+.share_list{
+    background-color: var(--color-blue) !important;
+    font-size: 16px !important;
+    min-width: 175px !important;
+}
+.add_item{
+    min-width: 160px !important;
+}
+.form{
+    display: flex;
+    gap: 10px;
+}
+.input_btns{
+    display: flex;
+    gap: 10px;
+}
+.input_wish{
+    border: 3px solid var(--color-light-blue);
+    padding: 12px;
+    border-radius: 12px;
+    width: 570px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.main_screen{
+    border: 3px solid var(--color-light-blue);
+    width: 100%;
+    min-height: 60vh;
+    border-radius: 20px;
+    margin: 30px 0 0 0;
+    position: relative;
+}
+.isEmpty{
+    color: var(--color-light-blue);
+    font-weight: 900;
+    font-size: 36px;
+    position: absolute;
+    left: calc(50% - 272px);
+    top: calc(40%);
+}
+.wish_list_item{
+    margin: 10px;
+    min-height: 50px;
+    border: 2px solid var(--color-light-blue);
+    padding: 10px 220px 10px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-light-blue);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    overflow-wrap: anywhere;
+}
+.wish_is_get{
+    color: var(--color-gray);
+    background-color: var(--color-light-gray);
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: calc(50% - 18px);
+    right: 10px;
+}
+.isGet{
+    background-color: var(--color-green) !important; 
+    font-size: 14px !important;
+    padding: 10px !important;
+}
+.isDelete{
+    background-color: var(--color-light-red) !important; 
+    font-size: 14px !important;
+    padding: 10px !important;
+}
+.admin{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.log_out{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.output{
+    color: var(--color-red);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 5px;
+    border: 3px solid var(--color-red);
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MOBILE SCREEN */
+@media (max-width: 500px) {
+    .admin{
+        justify-content: center;
+    }
+    .form{
+        align-items: center;
+    }
+    .input_wish{
+        font-size: 16px;
+    }
+    .share_list{
+        font-size: 12px !important;
+        min-width: 140px !important;
+    }
+    .add_item{
+        font-size: 12px !important;
+        min-width: 130px !important;
+    }
+    .main_screen{
+        margin: 15px 0 0 0;
+    }
+    .wish_list_item{
+        padding: 5px 125px 5px 5px !important;
+    }
+    .isEmpty{
+        font-size: 18px !important;
+        left: calc(50% - 135px) !important;
+    }
+}
+@media (max-width: 700px) {
+    .form{
+        flex-direction: column;
+    }
+    .wish_list_item{
+        font-size: 10px;
+        padding: 5px 165px 5px 5px;
+        margin: 5px;
+        border-radius: 15px;
+    }
+    .input_wish{
+        width: 100%;
+    }
+    .isGet{
+        font-size: 8px !important;
+        padding: 10px 6px !important;
+    }
+    .isDelete{
+        font-size: 8px !important;
+        padding: 10px 6px !important;
+    }
+    .btns{
+        top: calc(50% - 14.5px);
+        gap: 5px;
+        right: 3px;
+    }
+    .wrapper{
+        padding: 10px;
+    }
+    .isEmpty{
+        font-size: 24px;
+        left: calc(50% - 180px);
+    }
+}
+@media (max-width: 900px) {
+    .admin_name{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 5px;
+        max-width: 200px;
+    }
+}
+@media (max-width: 1150px) {
+    .header{
+        display: block;
+    }
+    .admin{
+        flex-direction: row;
+        margin-bottom: 15px;
+    }
+}

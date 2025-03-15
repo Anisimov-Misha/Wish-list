@@ -1,0 +1,7 @@
+.password_error{
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: none;
+}
