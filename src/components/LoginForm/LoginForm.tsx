@@ -1,8 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import s from './loginForm.module.css';
-
 function LoginForm() {
 
     const navigate = useNavigate();
@@ -59,7 +57,7 @@ function LoginForm() {
                 />
 
                 <div 
-                className={s.password_error}
+                className='password_error'
                 style={{display: showError ? 'block' : 'none'}}
                 >*Введенні дані не коректні!</div>
 

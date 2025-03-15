@@ -15,7 +15,6 @@
 
 body{
     font-family: Roboto Flex;
-    
 }
 
 .btn-auth{
@@ -26,6 +25,7 @@ body{
     font-size: 16px;
     font-weight: 900;
     min-width: 200px;
+    margin: 0 0 0 calc(50% - 100px);
 }
 .btn{
     background-color: var(--color-light-blue);
@@ -37,7 +37,7 @@ body{
     color: var(--color-white);
 }
 .auth-form{
-    width: 450px;
+    max-width: 450px;
     margin: 25px auto 36px;
 }
 .toogle-link{
@@ -48,12 +48,6 @@ body{
     font-weight: 1000;
     text-decoration: underline;
     cursor: pointer;
-}
-.required-field{
-    color: var(--color-blue);
-    font-size: 16px;
-    font-weight: 900;
-    margin-left: 50px;
 }
 .input{
     min-width: 200px;
@@ -71,5 +65,19 @@ body{
     font-weight: 700;
     font-size: 16px;
     margin: 0 0 10px 0;
+    @media (max-width: 650px) {
+        font-size: 14px;
+    }
 }
 
+.password_error{
+    color: var(--color-red);
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: none;
+    text-align: center;
+    @media (max-width: 650px) {
+        font-size: 14px;
+    }
+}

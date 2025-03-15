@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import s from './registerForm.module.css';
 
 function RegisterForm() {
 
@@ -36,7 +35,7 @@ function RegisterForm() {
         <>
             <form className="auth-form" onSubmit={handleClick}>
 
-                <div className="input-label">*Придумайте ваш логін (Не менше 6 символів)</div>
+                <div className="input-label">* Логін (Не менше 6 символів)</div>
                 <input 
                 type="text" 
                 className='input' 
@@ -45,7 +44,7 @@ function RegisterForm() {
                 value={login}
                 />
 
-                <div className="input-label">*Пароль</div>
+                <div className="input-label">* Пароль</div>
                 <input 
                 type="password" 
                 className='input' 
@@ -54,7 +53,7 @@ function RegisterForm() {
                 value={password}
                 />
 
-                <div className="input-label">*Повторіть пароль</div>
+                <div className="input-label">* Повторіть пароль</div>
                 <input 
                 type="password" 
                 className='input' 
@@ -64,12 +63,11 @@ function RegisterForm() {
                 />
 
                 <div 
-                className={s.password_error}
+                className='password_error'
                 style={{display: showError ? 'block' : 'none'}}
                 >*Введенні дані не коректні!</div>
 
                 <button type="submit" className='btn-auth'>Зареєструватись</button>
-                <span className='required-field'>*Обов'язкове поле</span>
                     
             </form>
         </>
